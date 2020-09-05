@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   line-height: 1;
   background: -webkit-linear-gradient(-45deg, #AC40CE 0%, #1C6EA4 50%, #1EC5C2 100%);
@@ -10,21 +10,24 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid rgb(155, 8, 135);
   padding: 10px;
 }
 
+/* Calendar area */ 
 .jumbotron {
   text-align: center;
   background: -webkit-linear-gradient(-45deg, #AC40CE 0%, #1C6EA4 50%, #1EC5C2 100%);  color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px dashed white;
 }
 
+/* enter your own item */ 
 .description{
   white-space: pre-wrap;
 }
 
+/* The times on the right */ 
 .time-block{
   text-align: center;
   border-radius: 15px;
@@ -36,43 +39,46 @@ textarea{
   border-top: 1px solid rgb(81, 255, 168);;
 }
 
+
 /* Displays the time on the left */ 
-.hour {
-  background-color: #22dae0;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
+  .hour {
+    background-color: #22dae0;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
 
-/* time already passed */ 
-.past {
-  background-color: #a1ffd0;
-  color: white;
-}
 
-/* Makes the current hour pink */
-.present {
-  background-color: #fd2e73;
-  color: white;
-}
+  /* Calendar Colors */ 
+      /* time already passed */ 
+        .past {
+          background-color: #a1ffd0;
+          color: white;
+        }
 
-/* Makes the next hour green */ 
-.future {
-  background-color: #77dd77;
-  color: white;
-}
+      /* Makes the current hour pink */
+        .present {
+          background-color: #fd2e73;
+          color: white;
+        }
+
+      /* Makes the next hour green */ 
+        .future {
+          background-color: #77dd77;
+          color: white;
+        }
 
 
 /* Save Button */ 
-.saveBtn {
-  border-left: 1px solid rgb(241, 23, 107);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
-}
+    .saveBtn {
+      border-left: 1px solid rgb(241, 23, 107);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: #06AED5;
+      color: white;
+    }
 
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: width 2s, height 2s, transform 2s;
-}
+    /* increases size when hovered over */ 
+    .saveBtn i:hover {
+      font-size: 20px;
+      transition: width 2s, height 2s, transform 2s;
+    }
